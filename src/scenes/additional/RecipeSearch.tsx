@@ -3,10 +3,10 @@
 
 import React from 'react'
 
-const RecipesSearch = () => {
+const RecipeSearch = () => {
   return (
     <div>RecipesSearch</div>
   )
 }
 
-export default RecipesSearch
+export default RecipeSearch
