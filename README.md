@@ -7,9 +7,13 @@ Welcome to Nutrify, a project dedicated to the world of food and nutrition. This
 
 Technologies Used
 React: A powerful JavaScript library for building user interfaces.
+
 TypeScript: A superset of JavaScript that adds static typing to the language.
+
 Vite: A fast and lightweight development environment for modern web projects.
+
 Tailwind CSS: A utility-first CSS framework for building responsive and stylish designs.
+
 Features
 Recipe Exploration: Browse through a vast collection of recipes to discover new and exciting dishes.
 
