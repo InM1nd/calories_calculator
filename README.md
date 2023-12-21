@@ -1,30 +1,54 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+Nutrify Project
+Overview
+Welcome to Nutrify, a project dedicated to the world of food and nutrition. This application is designed to provide users with a delightful experience exploring and learning about various recipes and nutritional information. The project is built using cutting-edge technologies such as React, TypeScript, Vite, and Tailwind CSS, ensuring a modern and efficient development workflow.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Technologies Used
+React: A powerful JavaScript library for building user interfaces.
+TypeScript: A superset of JavaScript that adds static typing to the language.
+Vite: A fast and lightweight development environment for modern web projects.
+Tailwind CSS: A utility-first CSS framework for building responsive and stylish designs.
+Features
+Recipe Exploration: Browse through a vast collection of recipes to discover new and exciting dishes.
 
-## Expanding the ESLint configuration
+Nutritional Information: Access detailed nutritional information for each recipe, helping you make informed dietary choices.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Interactive User Interface: Enjoy a seamless and interactive user interface built with React, providing a smooth navigation experience.
 
-- Configure the top-level `parserOptions` property like this:
+Getting Started
+To get started with Nutrify on your local machine, follow these steps:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+Clone the repository:
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+bash
+Copy code
+git clone https://github.com/InM1nd/calories_calculator.git
+Install dependencies:
+
+bash
+Copy code
+cd foodie-nourish
+npm install
+Set up API key:
+
+Obtain an API key from Edamam API and add it to your project configuration.
+
+Run the development server:
+
+bash
+Copy code
+npm run dev
+Open http://localhost:3000 in your browser to view Nutrify.
+
+API Integration
+Nutrify utilizes the Edamam API to fetch recipe and nutritional information. Ensure your API key is properly configured for seamless integration.
+
+Contribution
+Contributions are welcome! If you'd like to contribute to the project, please follow the guidelines outlined in the CONTRIBUTING.md file.
+
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Happy cooking and nourishing! 🍽️✨
