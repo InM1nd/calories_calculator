@@ -2,7 +2,9 @@
 
 
 Nutrify Project
+
 Overview
+
 Welcome to Nutrify, a project dedicated to the world of food and nutrition. This application is designed to provide users with a delightful experience exploring and learning about various recipes and nutritional information. The project is built using cutting-edge technologies such as React, TypeScript, Vite, and Tailwind CSS, ensuring a modern and efficient development workflow.
 
 Technologies Used
@@ -22,19 +24,27 @@ Nutritional Information: Access detailed nutritional information for each recipe
 Interactive User Interface: Enjoy a seamless and interactive user interface built with React, providing a smooth navigation experience.
 
 Getting Started
+
 To get started with Nutrify on your local machine, follow these steps:
 
 Clone the repository:
 
 bash
+
 Copy code
+
 git clone https://github.com/InM1nd/calories_calculator.git
+
 Install dependencies:
 
 bash
+
 Copy code
+
 cd foodie-nourish
+
 npm install
+
 Set up API key:
 
 Obtain an API key from Edamam API and add it to your project configuration.
@@ -42,8 +52,11 @@ Obtain an API key from Edamam API and add it to your project configuration.
 Run the development server:
 
 bash
+
 Copy code
+
 npm run dev
+
 Open http://localhost:3000 in your browser to view Nutrify.
 
 API Integration
