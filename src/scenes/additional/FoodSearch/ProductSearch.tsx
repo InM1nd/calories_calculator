@@ -3,18 +3,28 @@ import { fetchProduct } from "../../../utils/fetches/FetchProduct"
 import ProductList from './ProductList';
 
 
-interface Nutrients {
-  CHOCDF: number;
-  ENERC_KCAL: number;
-  FAT: number;
-  FIBTG: number;
-  PROCNT: number;
+interface Measure {
+  uri: string;
+  label: string;
+  weight: number;
+}
+
+interface Food {
+  category: string;
+  label: string;
+  image: string;
+  knownAs: string;
+  nutrients: {
+    CHOCDF: number;
+    ENERC_KCAL: number;
+    FAT: number;
+    PROCNT: number;
+  };
 }
 
 interface Product {
-  label: string;
-  image: string;
-  nutrients: Nutrients;
+  food: Food;
+  measures: Measure[];
 }
 
 const ProductSearch: React.FC = () => {

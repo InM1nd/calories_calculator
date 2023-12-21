@@ -3,7 +3,7 @@ export async function fetchProduct(query: string): Promise<any> {
   const appKey = '4594eb787ae98f1972e9c2e436debedb'; // Твой app_key
   const apiUrl = ` https://api.edamam.com/api/food-database/v2/parser?app_id=${appId}&app_key=${appKey}&ingr=${query}&nutrition-type=cooking`;
 
-
+  
   try {
     const response = await fetch(apiUrl);
 
@@ -11,7 +11,7 @@ export async function fetchProduct(query: string): Promise<any> {
       throw new Error(`Ошибка запроса: ${response.status}`);
     }
 
-    const data = await response.json();
+    const data: any = await response.json();
     console.log(data);
     return data;
   } catch (error) {
