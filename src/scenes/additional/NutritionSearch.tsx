@@ -2,7 +2,9 @@ import React from 'react'
 
 const NutritionSearch = () => {
   return (
-    <div>NutritionSearch</div>
+    <div>
+      Nutrition Search
+    </div>
   )
 }
 
