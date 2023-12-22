@@ -1,4 +1,6 @@
-import {Routes, Route} from "react-router-dom"
+import {Routes, Route, useLocation} from "react-router-dom"
+import { useEffect } from 'react';
+
 
 // import Header from "./scenes/global/Header"
 import Hero from "./scenes/additional/Hero"
@@ -10,9 +12,19 @@ import SharedLayout from "./utils/SharedLayout"
 
 
 const App = () => {
-  
-  return (
+  const location = useLocation();
 
+  useEffect(() => {
+    require('preline/preline');
+  }, []);
+
+  useEffect(() => {
+    // @ts-ignore
+    HSStaticMethods.autoInit();
+  }, [location.pathname]);
+
+  return (
+    <>
       <Routes>
         <Route path="/calories_calculator" element={<SharedLayout/>}>
           <Route index element={<Hero/>}/>
@@ -22,7 +34,7 @@ const App = () => {
           <Route path="*" element={<Hero/>}/>
         </Route>
       </Routes> 
-    
+    </>
   )
 }
 
