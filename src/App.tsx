@@ -1,5 +1,5 @@
 import {Routes, Route} from "react-router-dom"
-// import { useEffect } from 'react';
+
 
 
 // import Header from "./scenes/global/Header"
@@ -12,16 +12,7 @@ import SharedLayout from "./utils/SharedLayout"
 
 
 const App = () => {
-  // const location = useLocation();
 
-  // useEffect(() => {
-  //   require('preline/preline');
-  // }, []);
-
-  // useEffect(() => {
-  //   // @ts-ignore
-  //   HSStaticMethods.autoInit();
-  // }, [location.pathname]);
 
   return (
   
