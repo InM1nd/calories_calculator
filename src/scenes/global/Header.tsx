@@ -17,16 +17,16 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-    <header className="inset-x-0 top-0 z-50">
-        <nav className="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
+    <header className="bg-white">
+        <nav className="mx-auto flex max-w-5xl items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
-            <Link to="/calories_calculator" className="-m-1.5 p-1.5">
-              <span className="sr-only">Nurtify</span>
-              <img
+            <Link to="/calories_calculator" className="flex-none text-xl font-semibold">
+              <span className="flex-none text-xl font-semibold">Nurtify</span>
+              {/* <img
                 className="h-8 w-auto"
                 src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                 alt=""
-              />
+              /> */}
             </Link>
           </div>
           <div className="flex lg:hidden">
