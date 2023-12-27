@@ -14,11 +14,13 @@ Welcome to *Nutrify*, a project dedicated to the world of food and nutrition. Th
 
 ***Tailwind CSS:*** A utility-first CSS framework for building responsive and stylish designs.
 
-Features Recipe Exploration: Browse through a vast collection of recipes to discover new and exciting dishes.
 
-Nutritional Information: Access detailed nutritional information for each recipe, helping you make informed dietary choices.
+### Functional
+***Features Recipe Exploration:*** Browse through a vast collection of recipes to discover new and exciting dishes.
 
-Interactive User Interface: Enjoy a seamless and interactive user interface built with React, providing a smooth navigation experience.
+***Nutritional Information:*** Access detailed nutritional information for each recipe, helping you make informed dietary choices.
+
+***Interactive User Interface:*** Enjoy a seamless and interactive user interface built with React, providing a smooth navigation experience.
 
 ### Getting Started
 
@@ -30,27 +32,25 @@ To get started with Nutrify on your local machine, follow these steps:
 
 ***Install dependencies:
 
-*cd foodie-nourish
+*cd calories_calculator
 npm install
 
 Set up API key:
 
 Obtain an API key from Edamam API and add it to your project configuration.
 
-Run the development server:
+***Run the development server:
 
-bash
+*npm run dev
 
-Copy code
 
-npm run dev
+***API Integration***
+Nutrify utilizes the Edamam API to fetch recipe and nutritional information. Ensure your API key is properly configured for seamless integration.
 
-Open [http://localhost:3000](http://localhost:3000/) in your browser to view Nutrify.
+***Contribution***
+Contributions are welcome! If you'd like to contribute to the project, please follow the guidelines outlined in the CONTRIBUTING.md file.
 
-API Integration Nutrify utilizes the Edamam API to fetch recipe and nutritional information. Ensure your API key is properly configured for seamless integration.
-
-Contribution Contributions are welcome! If you'd like to contribute to the project, please follow the guidelines outlined in the CONTRIBUTING.md file.
-
-License This project is licensed under the MIT License - see the LICENSE file for details.
+***License***
+This project is licensed under the MIT License - see the LICENSE file for details.
 
 Happy cooking and nourishing! 🍽️✨
