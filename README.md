@@ -28,12 +28,12 @@ To get started with Nutrify on your local machine, follow these steps:
 
 ***Clone the repository:***
 
-*git clone [https://github.com/InM1nd/calories_calculator.git](https://github.com/InM1nd/calories_calculator.git)
+*git clone [https://github.com/InM1nd/calories_calculator.git](https://github.com/InM1nd/calories_calculator.git)*
 
 ***Install dependencies:***
 
 *cd calories_calculator
-npm install
+npm install*
 
 Set up API key:
 
@@ -41,7 +41,7 @@ Obtain an API key from Edamam API and add it to your project configuration.
 
 ***Run the development server:***
 
-*npm run dev
+*npm run dev*
 
 
 ***API Integration***
