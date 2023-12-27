@@ -45,12 +45,15 @@ Obtain an API key from Edamam API and add it to your project configuration.
 
 
 ***API Integration***
+
 Nutrify utilizes the Edamam API to fetch recipe and nutritional information. Ensure your API key is properly configured for seamless integration.
 
 ***Contribution***
+
 Contributions are welcome! If you'd like to contribute to the project, please follow the guidelines outlined in the CONTRIBUTING.md file.
 
 ***License***
+
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 Happy cooking and nourishing! 🍽️✨
