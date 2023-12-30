@@ -17,7 +17,7 @@ const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return (
-		<header className="absolute inset-x-0 top-0 z-50 ">
+		<header className="absolute inset-x-0 top-0 z-50">
         <nav className="mx-auto flex max-w-5xl items-center justify-between p-6 lg:px-8" aria-label="Global">
           <div className="flex lg:flex-1">
             <Link to="/calories_calculator/" className="text-gray-700">
