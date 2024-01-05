@@ -18,7 +18,7 @@ const Header = () => {
 
   return (
 		<header className="absolute inset-x-0 top-0 z-50">
-        <nav className="mx-auto flex max-w-5xl items-center justify-between p-10 lg:px-8" aria-label="Global">
+        <nav className="mx-auto flex max-w-[85rem] items-center justify-between p-10 lg:px-10" aria-label="Global">
           <div className="flex lg:flex-1">
             <Link to="/calories_calculator/" className="text-gray-700">
               <span className=" text-gray-900 text-3xl font-semibold">Nutrify</span>

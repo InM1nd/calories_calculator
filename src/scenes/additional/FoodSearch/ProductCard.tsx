@@ -57,7 +57,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
       <p className="mt-3 text-gray-800">Known As: {knownAs}</p>
       
       <div className="justify-evenly mt-3 p-2 text-gray-800 border border-gray-200 shadow-sm rounded-xl">
-        <h3>Calories: {roundTo(ENERC_KCAL)}kcal</h3>
+        <h3>Calories: {roundTo(ENERC_KCAL)}kcal/100g</h3>
         <div className='flex p-2 rounded-xl'>
           <div className='' style={{ width: calculatePercentage(FAT, totalNutrients), background: '#FF7F50', minHeight: '20px'}}/>  
           <div className='' style={{ width: calculatePercentage(CHOCDF, totalNutrients), background: '#66CDAA', minHeight: '20px' }}/>       
@@ -78,10 +78,13 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
           </div>
         </div>
       </div>
-      <p className="mt-3 text-gray-800">Measures:</p>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-3 p-2 text-gray-800 border border-gray-200 shadow-sm rounded-xl">
-        {measures.map((measure, index) => (
-          <div className='' key={index}>{`${measure.label}: ${roundTo(measure.weight)}`}</div>
+      <p className="mt-3 text-gray-800">Measures</p>
+      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-3 p-4 text-gray-800 border border-gray-200 shadow-sm rounded-xl" >
+        {measures.slice(0,6).map((measure, index) => (
+          <div className=''  key={index}>
+            <p>{measure.label}</p> 
+            <p>{roundTo(measure.weight)}g</p>
+          </div>
         ))}
       </div>
     </div>
