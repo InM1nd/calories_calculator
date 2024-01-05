@@ -15,7 +15,7 @@ const Hero = () => {
          </div>
         <div className="flex flex-col w-full items-center justify-center p-8">
           {/* <h1 className="text-3xl md:text-7xl text-green-700 tracking-loose">Nutrify</h1> */}
-          <h2 className="text-3xl md:text-5xl leading-relaxed md:leading-snug mb-2">Explore your food
+          <h2 className="text-4xl md:text-6xl leading-relaxed md:leading-snug mb-2">Explore your food
           </h2>
           <p className="text-center text-sm md:text-base mb-4">Explore your favourite food and
             register now to build your weekly nutrition plan.</p>

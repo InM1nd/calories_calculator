@@ -49,11 +49,11 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
 
   return (
-    <div className="flex flex-col p-2 border border-gray-200 shadow-sm rounded-xl dark:bg-slate-900 dark:border-gray-700 dark:shadow-slate-700/[.7]">
+    <div className="flex flex-col p-2 border bg-white shadow-sm border-gray-200 rounded-xl">
       {hasImage && <img src={image} alt={label} className='rounded-xl' />} 
       {!hasImage && <img src={placeholderImg} alt={label} className="placeholder-image rounded-xl" />} 
-      <h2 className="text-xl p-2 font-semibold text-gray-800 dark:text-gray-300 dark:hover:text-white">{label}</h2>
-      <p className="block mb-1 text-xs font-semibold uppercase text-blue-600 dark:text-blue-500">Category: {category}</p>
+      <h2 className="text-xl p-2 font-semibold text-gray-800">{label}</h2>
+      <p className="block mb-1 text-xs font-semibold uppercase text-blue-600">Category: {category}</p>
       <p className="mt-3 text-gray-800">Known As: {knownAs}</p>
       
       <div className="justify-evenly mt-3 p-2 text-gray-800 border border-gray-200 shadow-sm rounded-xl">
