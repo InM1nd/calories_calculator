@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import placeholderImg from "../../../img/NotFoundImg.jpg"
 
@@ -6,8 +6,9 @@ interface ProductCardProps {
   product: {
     food: {
       category: string;
+      brand:string;
       label: string;
-      image: string;
+      image?: string;
       knownAs: string;  
       nutrients: {
         ENERC_KCAL: number;
@@ -39,21 +40,38 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
   const { food, measures } = product;
   const {
     category,
+    brand,
     label,
     image,
     knownAs,
     nutrients: { CHOCDF, ENERC_KCAL, FAT, PROCNT },
   } = food;
-  const hasImage = !!image;
+  
+  const [hasImage, setHasImage] = useState<boolean>(!!image);
+
   const totalNutrients = CHOCDF + FAT + PROCNT;
 
+  const handleImageError = () => {
+    setHasImage(false);
+  };
 
   return (
-    <div className="flex flex-col p-2 border bg-white shadow-sm border-gray-200 rounded-xl">
-      {hasImage && <img src={image} alt={label} className='rounded-xl' />} 
-      {!hasImage && <img src={placeholderImg} alt={label} className="placeholder-image rounded-xl" />} 
+    <div className="flex flex-col justify-between p-2 border bg-white shadow-sm border-gray-200 rounded-xl">
+      {hasImage ? (
+        <img
+          src={image}
+          alt={label}
+          className="rounded-xl"
+          onError={handleImageError}
+        />
+      ) : (
+        <img src={placeholderImg} alt={label} className="placeholder-image rounded-xl" />
+      )}
       <h2 className="text-xl p-2 font-semibold text-gray-800">{label}</h2>
-      <p className="block mb-1 text-xs font-semibold uppercase text-blue-600">Category: {category}</p>
+      <div className='flex justify-evenly p-2'>
+      <p className="block text-xs font-semibold uppercase text-blue-600">Category: {category}</p>
+      <p className="block text-xs font-semibold uppercase text-blue-600">Brand: {brand ? brand : 'None'}</p>
+      </div>
       <p className="mt-3 text-gray-800">Known As: {knownAs}</p>
       
       <div className="justify-evenly mt-3 p-2 text-gray-800 border border-gray-200 shadow-sm rounded-xl">

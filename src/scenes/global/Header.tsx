@@ -52,11 +52,12 @@ const Header = () => {
             </Link>
           </div>
         </nav>
+
         <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
           <div className="fixed inset-0 z-50" />
           <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-10 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
             <div className="flex items-center justify-between">
-              <Link to="/calories_calculator/" className="-m-1.5 p-1.5">
+              <Link  onClick={() => setMobileMenuOpen(false)}  to="/calories_calculator/" className="-m-1.5 p-1.5">
                 <span className="text-3xl font-semibold">Nutrify</span>
                 {/* <img
                   className="h-8 w-auto"

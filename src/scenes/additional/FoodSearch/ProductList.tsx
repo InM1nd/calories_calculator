@@ -9,6 +9,7 @@ interface Measure {
 
 interface Food {
   category: string;
+  brand: string;
   label: string;
   image: string;
   knownAs: string;
@@ -31,7 +32,7 @@ interface ProductListProps {
 
 const ProductList: React.FC<ProductListProps> = ({ products }) => {
   return (
-  <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+  <div className="px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">   
         {products.map((product, index) => (
           <FoodCard key={index} product={product} />
